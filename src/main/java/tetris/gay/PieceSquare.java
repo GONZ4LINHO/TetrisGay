@@ -1,4 +1,4 @@
-package battle2023.ucp;
+package tetris.gay;
 
 public class PieceSquare {
     int matrizStick [][] = {

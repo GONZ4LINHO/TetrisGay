@@ -1,4 +1,4 @@
-package battle2023.ucp;
+package tetris.gay;
 
 public class PieceT {
     int matrizT [][] = {

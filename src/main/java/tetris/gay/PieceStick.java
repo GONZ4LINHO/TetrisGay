@@ -29,18 +29,9 @@ public class PieceStick {
         return this.matrizStick;
     }
 
-    
 
-    public boolean[][] getMatrizBoolean() {
-        return matrizBoolean;
-    }
-
-    public void setMatrizBoolean(boolean[][] value) {
-        this.matrizBoolean = value;
-    }
-
-    public PieceStick(int[][] value) {
-        this.matrizStick = value;
+    public PieceStick(int[][] matrizStick) {
+        this.matrizStick = matrizStick;
     }
 
     public void imprimirMatrizStick() {
