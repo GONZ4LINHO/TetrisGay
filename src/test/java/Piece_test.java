@@ -8,9 +8,9 @@ import tetris.gay.*;
 public class Piece_test{
     @Test
     public void stick_test(){
-        int[][] value={{0},{0}};
+        int[][] value={{0},{0},{0}};
         PieceStick stick = new PieceStick(value);
-        
+
         assertNotNull(stick);
     }
     @Test
