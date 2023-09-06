@@ -10,6 +10,7 @@ public class Piece_test{
     public void stick_test(){
         int[][] value={{0},{0}};
         PieceStick stick = new PieceStick(value);
+        
         assertNotNull(stick);
     }
     @Test
