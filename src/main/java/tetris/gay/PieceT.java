@@ -1,21 +1,52 @@
 package tetris.gay;
 
-public class PieceT {
-    int matrizT [][] = {
-        {0,0,0,0}, 
-        {0,0,0,0}, 
-        {0,1,0,0}, 
-        {1,1,1,0}    
-    };
-    
-    public void setMatrizT(int[][] matrizT) {
-        this.matrizT = matrizT;
+public class PieceT extends PieceBase{
+    public PieceT(int position){
+        this.name = "T";
+        changeform(position);
     }
-    public int[][] getMatrizT() {
-        return matrizT;
+
+    @Override
+    public void changeform(int state){
+        switch (state) {
+            case 1:
+                this.matrizforma = new int[][]{
+                    {0,1,0,0}, 
+                    {1,1,1,0}, 
+                    {0,0,0,0}, 
+                    {0,0,0,0}    
+                };
+                break;
+            
+            case 2:
+                this.matrizforma = new int[][]{
+                    {0,1,0,0}, 
+                    {0,1,1,0}, 
+                    {0,1,0,0}, 
+                    {0,0,0,0}    
+                };
+                break;
+
+            case 3:
+                this.matrizforma = new int[][]{
+                    {0,0,0,0}, 
+                    {1,1,1,0}, 
+                    {0,1,0,0}, 
+                    {0,0,0,0}    
+                };
+                break;
+            
+            case 4:
+                this.matrizforma = new int[][]{
+                    {0,1,0,0}, 
+                    {1,1,0,0}, 
+                    {0,1,0,0}, 
+                    {0,0,0,0}    
+                };
+                break;
+            default:
+
+                break;
+        }
     }
-    public PieceT(int[][] matrizT) {
-        this.matrizT = matrizT;
-    }
-    
 }

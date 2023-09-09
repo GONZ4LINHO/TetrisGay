@@ -8,20 +8,19 @@ import tetris.gay.*;
 public class Piece_test{
     @Test
     public void stick_test(){
-        int[][] value={{0},{0}};
-        PieceStick stick = new PieceStick(value);
+        PieceStick stick = new PieceStick();
 
         assertNotNull(stick);
     }
     @Test
     
     public void square_test(){
-        PieceSquare square = new PieceSquare(null);
+        PieceSquare square = new PieceSquare();
         assertNotNull(square);
     }
     @Test
     public void testStickComparison_test() {
-        PieceStick pieceStick = new PieceStick(null);
+        PieceStick pieceStick = new PieceStick();
         
         int[][] expectedMatriz = {
             {1, 0, 0, 0}, 

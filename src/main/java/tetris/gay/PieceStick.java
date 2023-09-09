@@ -30,7 +30,7 @@ public class PieceStick {
     }
 
 
-    public PieceStick(int[][] matrizStick) {
+    public PieceStick() {
         this.matrizStick = matrizStick;
     }
 
