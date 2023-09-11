@@ -28,6 +28,7 @@ public class PieceBase{
             this.position = 4;
         }
     }
+<<<<<<< HEAD
 
     public void rotate(int dir){
         if (dir == 1) {
@@ -36,6 +37,8 @@ public class PieceBase{
             this.rotateright();
         }
     }
+=======
+>>>>>>> 89ba50d2249cf464fd43e8ba241d836a3ee5cc69
     
     public void changeform(int state){}
 }

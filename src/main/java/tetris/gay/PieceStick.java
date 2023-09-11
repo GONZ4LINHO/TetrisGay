@@ -27,6 +27,7 @@ public class PieceStick extends PieceBase{
                 };
                 break;
 
+<<<<<<< HEAD
             case 3:
                 this.matrizforma = new int[][]{
                     {1,0,0,0}, 
@@ -44,6 +45,11 @@ public class PieceStick extends PieceBase{
                     {0,0,0,0}     
                 };
                 break;
+=======
+    public PieceStick() {
+        this.matrizStick = matrizStick;
+    }
+>>>>>>> 89ba50d2249cf464fd43e8ba241d836a3ee5cc69
 
             default:
 
