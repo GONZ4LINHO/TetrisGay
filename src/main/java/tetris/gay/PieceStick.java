@@ -1,45 +1,53 @@
 package tetris.gay;
 
-public class PieceStick {
-    int matrizStick [][] = {
-        {1,0,0,0}, 
-        {1,0,0,0}, 
-        {1,0,0,0}, 
-        {1,0,0,0}    
-    };
-    boolean matrizBoolean[][] = new boolean[4][4];
-
-    public void convertirMatriz() {
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) {
-                if (matrizStick[i][j] == 0) {
-                    matrizBoolean[i][j] = false;
-                } else if (matrizStick[i][j] == 1) {
-                    matrizBoolean[i][j] = true;
-                }  
-            }
-        }  
-        
-    }
-    public void setMatrizStick(int[][] value) {
-        this.matrizStick = value;
-    }
-    
-    public int[][] getMatrizStick() {
-        return this.matrizStick;
+public class PieceStick extends PieceBase{
+    public PieceStick(int position){
+        this.name = "PALO";
+        changeform(position);
     }
 
+    @Override
+    public void changeform(int state){
+        switch (state) {
+            case 1:
+                this.matrizforma = new int[][]{
+                    {1,0,0,0}, 
+                    {1,0,0,0}, 
+                    {1,0,0,0}, 
+                    {0,0,0,0}    
+                };
+                break;
+            
+            case 2:
+                this.matrizforma = new int[][]{
+                    {1,1,1,1}, 
+                    {0,0,0,0}, 
+                    {0,0,0,0}, 
+                    {0,0,0,0}    
+                };
+                break;
 
-    public PieceStick(int[][] matrizStick) {
-        this.matrizStick = matrizStick;
-    }
+            case 3:
+                this.matrizforma = new int[][]{
+                    {1,0,0,0}, 
+                    {1,0,0,0}, 
+                    {1,0,0,0}, 
+                    {1,0,0,0}    
+                };
+                break;
+            
+                case 4:
+                this.matrizforma = new int[][]{
+                    {1,1,1,1}, 
+                    {0,0,0,0}, 
+                    {0,0,0,0}, 
+                    {0,0,0,0}     
+                };
+                break;
 
-    public void imprimirMatrizStick() {
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) {
-                System.out.print(this.matrizStick[i][j] + " ");
-            }
-            System.out.println();
+            default:
+
+                break;
         }
     }
 }
